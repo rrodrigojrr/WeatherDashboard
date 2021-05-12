@@ -207,7 +207,7 @@ Vue.component('prevboxtempout', {
     <div class="row d-flex justify-content-center row-prev">
         <div v-for="dado in dados" class="col-10 col-lg-3 col-sm-8 col-md-5 col-xl-2 card-prev my-3 mx-1 py-1" id="dia1">
             <h3 class="dias mt-2 fadeout">{{ dado.dir.dia }}</h3>
-            <img src="imgs/chuvisco.png" class="my-2 fadeout">
+            <img :src="'imgs/'+dado.dir.cod" class="my-2 fadeout">
             <p class="prev-diaria fadeout">{{ dado.dir.tempMax }} ºC</p>
             
         </div>
@@ -265,7 +265,7 @@ Vue.component('prevboxprecout', {
     <div class="row d-flex justify-content-center row-prev">
         <div v-for="dado in dados" class="col-10 col-lg-3 col-sm-8 col-md-5 col-xl-2 card-prev my-3 mx-1 py-1" id="dia1">
             <h3 class="dias mt-2 fadeout">{{ dado.dir.dia }}</h3>
-            <img src="imgs/chuvisco.png" class="my-2 fadeout">
+            <img :src="'imgs/'+dado.dir.cod" class="my-2 fadeout">
             <p class="prev-diaria fadeout">{{ dado.dir.prec }} mm</p>
         </div>
     </div>
