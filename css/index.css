@@ -1,0 +1,135 @@
+.card-prev {
+    background-color: aqua;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.prev-wrap {
+    height:100vh;
+}
+
+.prev-horaria {
+    font-size: 15px;
+}
+
+.prev-horaria-titulo {
+    font-size: 10px;
+}
+
+.prev-diaria {
+    font-size: 50px;
+}
+
+.prev-diaria-temp {
+    font-size: 30px;
+}
+
+.dash-box {
+    padding-top: 100px;
+}
+
+
+.dias {
+    text-align: center;
+    font-size: 20px;
+}
+
+#dia1, #dia2, #dia3, #dia4, #dia5 {
+    height: 290px;
+    
+}
+
+
+.passarmouse {
+    opacity: 0.3;
+}
+
+
+.fadein {
+    animation-name: fadein;
+    animation-duration:  300ms;
+    animation-timing-function: ease-in-out;
+    animation-delay:0s;
+    animation-iteration-count:1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+@keyframes fadein {
+    from {
+      opacity: 0;
+    } to {
+      opacity: 1;
+   }
+  }
+
+
+
+.fadeout {
+    animation-name: fadeout;
+    animation-duration:  300ms;
+    animation-timing-function: ease-in-out;
+    animation-delay:0s;
+    animation-iteration-count:1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+@keyframes fadeout {
+    from {
+      opacity: 1;
+    } to {
+      opacity: 0;
+   }
+  }
+
+.graficoIn {
+    
+    height: 0px;
+    width: 1000px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation-name: graficoIn;
+    animation-duration:  600ms;
+    animation-timing-function: ease-in-out;
+    animation-delay:0s;
+    animation-iteration-count:1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+.graficoOut {
+    height: 0px;
+    width: 1000px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation-name: graficoOut;
+    animation-duration:  600ms;
+    animation-timing-function: ease-in-out;
+    animation-delay:0s;
+    animation-iteration-count:1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+
+
+
+@keyframes graficoIn {
+    from {
+      height:0px;
+    } to {
+      height:400px;
+   }
+  }
+
+@keyframes graficoOut {
+from {
+    height:400px;
+} to {
+    height:0px;
+}
+}
+
